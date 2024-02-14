@@ -1,3 +1,14 @@
+; Executable name : uppercaser
+; Version         : 1.0
+; Typed Up        : 2023/10/22
+; Last updated    : 2024/02/12
+; Author          : Jeff Duntemann with error checking added by JBird
+; Description     : Simple assembly app for Linux. Assembled with NASM 2.14
+;
+;Build using:
+;    nasm -f elf -g -F stabs uppercaser.asm -l uppercaser.lst
+;    ld -o uppercaser uppercaser.o -melf_i386
+
 section .bss
     Buff resb 1
 
